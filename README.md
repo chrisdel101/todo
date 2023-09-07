@@ -3,6 +3,8 @@
 #### Installation 
 ```
 - git clone && cd todo
+- create .env file at project root
+- copy in REACT_APP_API_KEY = "your api key"
 - npm install
 - npm start
 ```
