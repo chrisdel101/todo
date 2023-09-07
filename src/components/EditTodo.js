@@ -1,17 +1,9 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { db } from '../servicies/firebase.config'
-import {
-  collection,
-  addDoc,
-  serverTimestamp,
-  getDocs,
-  doc,
-  deleteDoc,
-  updateDoc,
-} from 'firebase/firestore'
+import { doc, updateDoc } from 'firebase/firestore'
 
 const EditTodo = ({ todo, id }) => {
-    console.log(id, "ID")
+  console.log(id, 'ID')
   const [todos, setTodos] = useState([todo])
   const updateTodo = async (e) => {
     e.preventDefault()

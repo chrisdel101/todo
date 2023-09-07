@@ -1,7 +1,12 @@
 import './App.css';
 import Todo from './components/Todo';
-
-  function App() {
+import { useEffect } from 'react' 
+function App() {
+    useEffect(() => {
+      window.process = {
+        ...window.process,
+      };
+    }, []);
    return (
    <div className="App">
    <Todo />

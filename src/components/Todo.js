@@ -8,7 +8,6 @@ import {
   getDocs,
   doc, 
   deleteDoc, 
-  updateDoc
 } from 'firebase/firestore'
 
 const collectionRef = collection(db, 'todo')
